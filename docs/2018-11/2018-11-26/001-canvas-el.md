@@ -9,3 +9,9 @@
 
 ## fillText/strokeText
 > 参数类似 context.api('text', x, y) 
+
+## 注意：(px)
+> 在设置 canvas 高度、宽度 的时候，不能用 px 做单位
+
+## canvas 默认大小 (300x150)
+> 300x150
