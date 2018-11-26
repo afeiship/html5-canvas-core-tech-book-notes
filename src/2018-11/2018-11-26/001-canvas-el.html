@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas El</title>
+    <style>
+        body {
+            background: #ddd;
+        }
+
+        #canvas {
+            /*
+            默认情况下： canvas 的背景颜色 与父元素一至，这里就是
+            默认与 body 元素一致
+            */
+            /*
+            canvas 默认 300 x 150 (宽度：300， 高度： 150)
+            */
+            margin: 10px;
+            padding: 10px;
+            background: #fff;
+            border: thin inset #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas"> NOT support </canvas>
+    <script src="./canvas-el.js"></script>
+</body>
+
+</html>
