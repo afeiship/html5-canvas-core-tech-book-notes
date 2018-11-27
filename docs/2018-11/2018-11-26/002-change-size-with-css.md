@@ -7,3 +7,5 @@
 - 区别在于： 元素实际上有两套尺寸： 元素本身大小、元素绘图表面(drawing surface)大小
 
 
+## 浏览器可能会自动缩放 Canvas
+> 推荐通过 width 与 height 而非 css 修改 canvas 大小
