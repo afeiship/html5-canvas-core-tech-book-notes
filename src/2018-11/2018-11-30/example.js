@@ -17,7 +17,7 @@ function drawBackground() {
     var VERTICLE_LINE_SPACING = 12;
     var i = context.canvas.height;
 
-    context.clearReact(0, 0, canvas.width, canvas.height);
+    context.clearRect(0, 0, canvas.width, canvas.height);
     context.strokeStyle = 'lightgray';
     context.lineWidth = 0.5;
 
@@ -63,4 +63,16 @@ function drawVerticalLine(inX) {
 
 canvas.onmousemove = function (inEvent) {
     var loc = windowToCanvas(inEvent.clientX, inEvent.clientY);
+    drawBackground();
+    drawSpritesheet();
+    drawGuidelines(loc.x, loc.y);
+    updateReadout(loc.x, loc.y);
 };
+
+// initialization
+spritesheet.src = 'https://avatar.csdn.net/A/8/6/3_deeplies.jpg';
+spritesheet.onload = function (inEvent) {
+    drawSpritesheet();
+};
+
+drawBackground();
